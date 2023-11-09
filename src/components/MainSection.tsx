@@ -6,11 +6,23 @@ import rating1 from "/public/rating1.png"
 import rating2 from "/public/rating2.png"
 import Image from 'next/image';
 import SocialIcon from './SocialIcon';
+import vertor from "../../public/Vector1.png"
+import menu2 from "../../public/menu2.png";
 
 const MainSection = () => {
     return (
-        <div className="w-full relative md2:w-[70%] xl:w-3/5 2xl:w-[1190px] bg-white rounded-lg pl-[72px] py-[40px] pr-[35px] h-auto">
-            <div>
+        <div className="w-full  md2:w-[70%] xl:w-3/5 2xl:w-[1190px] flex flex-col">
+            <div className='w-full flex sm:hidden justify-between items-center px-4 py-3 bg-white rounded-lg mb-3'>
+                <span className='flex gap-3'>
+                    <Image src={menu2} width={20} height={20} alt="img" ></Image>
+                    <span className="text-sm font-semibold">Select Food Item</span>
+                </span>
+                <span>
+                    <Image src={ vertor} width={10} height={5} alt="img" ></Image>
+                </span>
+            </div>
+
+            <div className="relative bg-white rounded-lg pl-[72px] py-[40px] pr-[35px] h-auto">
                 <div className='grid grid-cols-1 sm:grid-cols-2 md2:grid-cols-1 lg:grid-cols-2  gap-4 pb-6'>
                     <div>
                         <h1 className='text-[38px] pb-2 font-bold'>Health benefits of an avocado</h1>
