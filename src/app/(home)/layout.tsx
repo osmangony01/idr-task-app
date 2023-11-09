@@ -2,9 +2,10 @@
 
 import LeftMostSidebar from '@/components/LeftMostSidebar';
 import Navbar from '@/components/Navbar';
+import { ReactNode } from 'react';
 
 
-const HomeLayout = ({ children }) => {
+const HomeLayout = ({ children }: { children: ReactNode }) => {
 
     return (
         <div className="">
