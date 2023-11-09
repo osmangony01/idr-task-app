@@ -28,10 +28,10 @@ const Navbar = () => {
                 <span className='flex md2:hidden cursor-pointer' onClick={() => setSidebarControl(!sidebarControl)}>
                     <Image src={search} width={32} height={32} className="" alt="img" />
                 </span>
-                <span className="cursor-pointer">
+                <span className="cursor-pointer hidden md2:flex">
                     <Image src={mode} width={32} height={32} className="" alt="img" />
                 </span>
-                <span className="cursor-pointer">
+                <span className="cursor-pointer hidden md2:flex">
                     <Image src={switchs} width={32} height={32} className="" alt="img" />
                 </span>
                 <span className="cursor-pointer" onClick={() => setSidebarControl(!sidebarControl)}>
